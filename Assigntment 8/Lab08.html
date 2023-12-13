@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<TITLE> Student Grading </TITLE>
+</HEAD>
+<BODY>
+
+<h1>Enter a new record</h1>
+
+<FORM action="http://localhost/Lab08.py" method= "post" id="ProfileSubmit">
+<label for="StudentName">Full Name: </label>
+<Input id="StudentName" name= "StudentName"><br>
+<label for="Exam1">Midterm #1: </label>
+<Input id="Exam1" name= "Exam1"><br>
+<label for="Exam2">Midterm #2: </label>
+<Input id="Exam2" name= "Exam2"><br>
+<label for="Final">Final Exam: </label>
+<Input id="Final" name= "Final"><br>
+<Input type="submit" name="action" value="Save">
+<Input type="submit" name="action" value="Display the records">
+</FORM>
+
+<h2>Delete a record </h2>
+<FORM action="http://localhost/Lab08.py" method="post" id="ProfileDelete">
+<label for="DeleteProfile">Full Name: </label>
+<Input id="DeleteProfile" name= "DeleteProfile"><br>
+<Input type="submit" name="action" value="Delete">
+</FORM>
+
+</BODY>
+</HTML>
+<!--Sources-->
+<!--Creation of both forms was in help from the lecture slides. Especially with the "action" portions for each form tag.-->

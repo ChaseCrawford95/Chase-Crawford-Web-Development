@@ -1,0 +1,178 @@
+body{
+    background-color: #282828;
+}
+
+#Button_0{
+    position: absolute;
+    left: 600px;
+    bottom: 130px;
+    width: 110px;
+    height: 55px;
+    border-radius: 8px;
+    background-color: #04FFF7;
+    font-weight: bold;
+}
+#Button_1{
+    position: absolute;
+    left: 450px;
+    bottom: 200px;
+    width: 110px;
+    height: 55px;
+    border-radius: 8px;
+    background-color: #04FFF7;
+    font-weight: bold;
+}
+#Button_2{
+    position: absolute;
+    left: 600px;
+    bottom: 200px;
+    width: 110px;
+    height: 55px;
+    border-radius: 8px;
+    background-color: #04FFF7;
+    font-weight: bold;
+}
+#Button_3{
+    position: absolute;
+    left: 750px;
+    bottom: 200px;
+    width: 110px;
+    height: 55px;
+    border-radius: 8px;
+    background-color: #04FFF7;
+    font-weight: bold;
+}
+#Button_4{
+    position: absolute;
+    left: 450px;
+    bottom: 270px;
+    width: 110px;
+    height: 55px;
+    border-radius: 8px;
+    background-color: #04FFF7;
+    font-weight: bold;
+}
+#Button_5{
+    position: absolute;
+    left: 600px;
+    bottom: 270px;
+    width: 110px;
+    height: 55px;
+    border-radius: 8px;
+    background-color: #04FFF7;
+    font-weight: bold;
+}
+#Button_6{
+    position: absolute;
+    left: 750px;
+    bottom: 270px;
+    width: 110px;
+    height: 55px;
+    border-radius: 8px;
+    background-color: #04FFF7;
+    font-weight: bold;
+}
+#Button_7{
+    position: absolute;
+    left: 450px;
+    bottom: 340px;
+    width: 110px;
+    height: 55px;
+    border-radius: 8px;
+    background-color: #04FFF7;
+    font-weight: bold;
+}
+
+#Button_8{
+    position: absolute;
+    left: 600px;
+    bottom: 340px;
+    width: 110px;
+    height: 55px;
+    border-radius: 8px;
+    background-color: #04FFF7;
+    font-weight: bold;
+}
+#Button_9{
+    position: absolute;
+    left: 750px;
+    bottom: 340px;
+    width: 110px;
+    height: 55px;
+    border-radius: 8px;
+    background-color: #04FFF7;
+    font-weight: bold;
+}
+#Button_add{
+    position: absolute;
+    left: 900px;
+    bottom: 340px;
+    width: 55px;
+    height: 55px;
+    border-radius: 8px;
+    background-color: #04FFF7;
+    font-weight: bold;
+}
+#Button_min{
+    position: absolute;
+    left: 900px;
+    bottom: 270px;
+    width: 55px;
+    height: 55px;
+    border-radius: 8px;
+    background-color: #04FFF7;
+    font-weight: bold;
+}
+#Button_multi{
+    position: absolute;
+    left: 900px;
+    bottom: 200px;
+    width: 55px;
+    height: 55px;
+    border-radius: 8px;
+    background-color: #04FFF7;
+    font-weight: bold;
+}
+#Button_div{
+    position: absolute;
+    left: 900px;
+    bottom: 130px;
+    width: 55px;
+    height: 55px;
+    border-radius: 8px;
+    background-color: #04FFF7;
+    font-weight: bold;
+}
+#Button_equal{
+    position: absolute;
+    left: 750px;
+    bottom: 130px;
+    width: 110px;
+    height: 55px;
+    border-radius: 8px;
+    background-color: #04FFF7;
+    font-weight: bold;
+}
+#Button_Clear{
+    position: absolute;
+    left: 450px;
+    bottom: 130px;
+    width: 110px;
+    height: 55px;
+    border-radius: 8px;
+    background-color: #04FFF7;
+    font-weight: bold;
+}
+#Text_Field {
+    position: absolute;
+    left: 450px;
+    bottom: 410px;
+    width: 402px;
+    height: 75px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 8px;
+    color: #04FFF7;
+    background-color: #282828;
+    border-color: #04FFF7;
+}

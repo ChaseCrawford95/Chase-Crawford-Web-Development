@@ -1,0 +1,5 @@
+cd <directory name here>
+
+sqlite3 data.sqlite
+
+SELECT * FROM Profiles;

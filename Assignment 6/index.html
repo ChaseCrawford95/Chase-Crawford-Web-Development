@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        
+        <title>Sign In</title>
+    </head>
+
+    <body>
+        <script src="report.js"></script>
+
+        <ul id="SideNav">
+            <li><a href="file:///C:/Users/chase/OneDrive/Desktop/Web%20Development/Assignment%206/index.html">Sign In</a></li>
+            <li><a href="file:///C:/Users/chase/OneDrive/Desktop/Web%20Development/Assignment%206/base.html">Home</a></li>
+            
+        </ul>
+
+        <div style="margin-left:15%;padding:1px 16px;height:1000px;">
+
+            <header>
+                <h1>Welcome to Password Check</h1>
+            </header>
+
+            <p>Let's see if your Password is secure!</p>
+
+            <p>Fill out the form below with a User Name and Password that has three restraints.</p>
+
+            <ul>
+                <li>Must have an uppercase letter somewhere.</li>
+                <li>Must have a lowercase letter somewhere.</li>
+                <li>Must have a number at the end.</li>
+                <li>Must be at least 8 characters long.</li>
+            </ul>
+
+            <form action="report.html" method="get" id="ProfileSubmit" onsubmit="formSubmission(event)">
+                <label for="UserNameTag">User Name:</label>
+                <input id="UserNameTag" name="UserName">
+                <Label for="PasswordTag"> Password:</Label>
+                <input id="PasswordTag" name="Password">
+                <input type="submit" name="" value="Submit Form">
+            </form>
+
+        </div>
+
+    </body>
+</html>
+<!--Sources-->
+<!--Creation of the Menu Navigation Bar was in help from this website: https://www.w3schools.com/css/css_navbar.asp -->
+<!--Chatgpt helped me understand how to link a submit button to a JavaScript function and for which HTML page the submit button will send the user to. This would be line 35: <form action="report.html" method="get" id="ProfileSubmit" onsubmit="formSubmission(event)"> -->

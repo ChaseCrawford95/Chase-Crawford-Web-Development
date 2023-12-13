@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/Sign_In.css">
+        <title>Sign In</title>
+    </head>
+    <body>
+        <ul id="SideNav">
+            <li><a href="Account_Creation.html">Account Creation</a></li>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Sign_In.html">Sign In</a></li>
+            
+        </ul>
+        <div style="margin-left:15%;padding:1px 16px;height:1000px;">
+            <header>
+                <h1>Welcome to the Sign In Page</h1>
+            </header>
+
+            <form action="/signingIn" method="post">
+                <label for="UserName">User Name:</label>
+                <input id="UserNameTag" name="Email"><br>
+                <Label for="PasswordTag"> Password:</Label>
+                <input id="PasswordTag" name="Password"><br>
+                <input type="submit" name="" value="Submit">
+            </form>
+
+        </div>
+    </body>
+</html>
+<!--Sources-->
+<!--Creation of the Menu Navigation Bar was in help from this website: https://www.w3schools.com/css/css_navbar.asp -->
+<!--Chatgpt helped me understand how to link a submit button to a JavaScript function and for which HTML page the submit button will send the user to. This would be line 19 to 25

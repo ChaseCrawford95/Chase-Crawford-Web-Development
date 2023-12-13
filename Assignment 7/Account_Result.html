@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/Account_Result.css">
+        <title>Account Verification</title>
+    </head>
+    <body>
+        <script src="/static/Account_Result.js" defer></script>
+
+
+
+        <ul id="SideNav">
+            <li><a href="Account_Creation.html">Account Creation</a></li>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Sign_In.html">Sign In</a></li>
+            
+        </ul>
+        <div style="margin-left:15%;padding:1px 16px;height:1000px;">
+            <p>Let's see if your password met the requirements.</p>
+            <p id="p1"></p>
+            <p id="p2"></p>
+            <ul id="List"></ul>
+        </div>
+        <script>
+            var Error = localStorage.getItem("ErrorMessages");
+            var StoredErrorArray = JSON.parse(Error);
+            console.log(Error);
+            console.log(typeof Error);
+            console.log(StoredErrorArray);
+            console.log(typeof StoredErrorArray);
+            console.log(Array.isArray(StoredErrorArray));
+            var para1 = document.getElementById("p1");
+            var para2 = document.getElementById("p2");
+            var ErrorList = document.getElementById("List");
+            if(StoredErrorArray.length>0){
+                para1.textContent = "Oh no! Looks like you had issues with your Password!";
+                para2.textContent = "Here are the requirements you failed:"
+                for(var i = 0; i < StoredErrorArray.length; i++){
+                    var asdf = document.createElement("li");
+                    asdf.textContent = StoredErrorArray[i];
+                    ErrorList.appendChild(asdf);
+                }
+            }
+            else{
+                para1.textContent = "Thank you for registering!";
+                para2.textContent = "Your profile has been created!";
+            }
+          
+            
+            
+            
+            
+            
+        </script>
+
+    </body>
+</html>
+<!--Sources-->
+<!--Creation of the Menu Navigation Bar was in help from this website: https://www.w3schools.com/css/css_navbar.asp -->
+<!--Chatgpt helped me with understanding how to transfer data locally from one html page to another html page. This would be line 24 to 25: var Error = localStorage.getItem("ErrorMessages"); var StoredErrorArray = JSON.parse(Error);-->
+<!--Chatgpt helped me with understading how to change a <p> tag with JavaScript and how to make an array add its contents to a <ul> tag. This would be line 33 to 44-->
