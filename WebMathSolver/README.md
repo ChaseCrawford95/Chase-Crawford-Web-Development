@@ -1,0 +1,1 @@
+This program was an assignment from college that requested that I take in math problems from a website (the URL) and solve the problems. The individual math problems would then be dipslayed on the terminal and would be answered. 
