@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="/static/main.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Login</title>
+    </head>
+    <body>
+        
+        <div class="banner">
+            <img src="./static/logo.png" alt="TASC_Logo">
+            <h1>Login Page</h1>
+        </div>
+
+        <div class="container">
+            {% for mesg in get_flashed_messages() %}
+                    <h2>{{ mesg }}</h2>
+            {% endfor %}
+            <div>
+                <p>Please login below</p>
+                <form method = "post">
+                    {{form.hidden_tag()}}
+                    {{form.user_name.label}} {{form.user_name}}
+                    <br>
+                    {{form.password.label}} <input type="password" name="{{form.password.name}}">
+                    <br>
+                    {{form.submit}}          
+                    <br>              
+                </form>
+                <br>
+                <a href="/">No login? Sign up here</a>
+                <!-- error display function -->
+                {% if error %}
+                <p>{{ error }}</p>
+                {% endif %}
+            </div>
+        </div>
+    </body>
+</html>

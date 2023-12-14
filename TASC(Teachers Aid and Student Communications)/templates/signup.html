@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/static/main.css">
+        <title>Signup Page</title>
+    </head>
+    <body>
+
+        <div class="banner">
+            <img src="./static/logo.png" alt="TASC_Logo">
+            <h1>Sign-Up Page</h1>
+        </div>
+
+        <div class="container">
+                {% if form %}
+                    <p>Create an account</p>
+                    <form method = "post" >
+                        {{form.hidden_tag()}}
+                        {{form.user_type.label}} {{form.user_type}}
+                        <br>
+                        {{form.user_name.label}} {{form.user_name}}
+                        <br>
+                        {{form.password.label}} <input type="password" name="{{form.password.name}}">
+                        <br>
+                        {{form.confirm_password.label}} <input type="password" name="{{form.confirm_password.name}}">
+                        <br>
+                        {{form.display_name.label}} {{form.display_name}}
+                        <br>
+                        {{form.submit}}                        
+                    </form>
+                    <a href="{{ url_for('login') }}">Have an account? Log in.</a>
+                    
+                {% else %}
+                    <h1>Thank you for signing up!</h1>
+                    <p>Your account has been created successfully.</p>
+                    <p>Welcome!</p>
+                    <a href="/login">Back to Login</a>
+                {% endif %}
+        </div>
+
+        {% if error %}
+            <p style="color: red;">{{ error }}</p>
+        {% endif %}
+        
+    </body>
+</html>
