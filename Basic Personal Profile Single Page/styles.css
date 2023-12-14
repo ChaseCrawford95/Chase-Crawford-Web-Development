@@ -1,0 +1,191 @@
+/*This part deals with the body*/
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* I wanted to go with this color of black because of its just the right type of black. Not too dark, not too bright*/
+    background-color: #252525;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+/* li and li::before will make it where the bullet points will be replaced with 8 pointed stars */
+li{
+    list-style-type: none;
+    padding-left: 0;
+}
+li::marker{
+    content: "\2738";
+
+}
+/* all anchor tags will be aquamarine */
+a{
+    color: aquamarine;
+}
+/* .container and .skills_and_hobbies will make it where the content will be placed at the center of the screen */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills_and_hobbies{
+    display: flex;
+}
+
+.header{
+    /* aquamarine was the choice of secondary color because it does so well under darker themes. It's a color that stands out because of its neon characteristic */
+    color: aquamarine;
+}
+.header #h1{
+    position: relative;
+    top: 100px;
+    left: 300px;
+}
+.header #h2{
+    position: relative;
+    top:125px;
+    left: 400px;
+}
+/* This is the manipulation of the profile picture on the about me page*/
+.profile_picture #profile_picture{
+    border-radius: 50%;
+    position: relative;
+    top: -10px;
+    left: -10px;
+    width: 220px;
+    height: 220px;
+    margin-left: 10px;
+}
+
+/* .profile_picture and .profile_picture::before will change how the background of the profile picture will look. Currently it is in a crecent moon */
+.profile_picture{
+    background-color: aquamarine;
+    position: relative;
+    border-radius: 50%;
+}
+.profile_picture::before{
+    position: absolute;
+    background-color: aquamarine;
+    border-radius: 50%;
+    transform: scale(2);
+    z-index: -1;
+
+}
+/* This is the mainpulation of the divider line on the About me page*/
+.decorative-line{
+    
+    height: 2px;
+    width: 70%;
+    border-color: aquamarine;
+    background-color: aquamarine;
+    margin: 0;
+}
+
+.skills{
+    width: 400px;
+    height: 600px;
+    background-color: aquamarine;
+    z-index: 2;
+    border-radius: 25%;
+    /* This transition attribute makes it where when you hover over an item there will be a slow visual transition*/
+    transition: all 0.3s ease 0.1s;
+    margin: 20px;
+}
+/* This is how big the skills tag will get when you hover over it*/
+.skills:hover{
+    transform: scale(1.1);
+    font-size: large;
+}
+.skills #skills_list{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+    font-size: small;
+}
+.skills h3{
+    position: relative;
+    left: 80px;
+}
+
+.hobbies{
+    width: 400px;
+    height: 600px;
+    background-color: aquamarine;
+    z-index: 2;
+    border-radius: 25%;
+    /* This transition attribute makes it where when you hover over an item there will be a slow visual transition*/
+    transition: all 0.3s ease 0.1s;
+    margin: 20px;
+    
+}
+
+
+/* This is the manipulation spot for the hobbies list on the About me page*/
+.hobbies #hobbies_list{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+    font-size: small;
+}
+
+/* This is how big the hobbies tag will get when you hover over it*/
+.hobbies:hover{
+    transform: scale(1.1);
+    font-size: large;
+}
+.hobbies h3{
+    position: relative;
+    left: 80px;
+}
+
+.bio{
+    /* This transition attribute makes it where when you hover over an item there will be a slow visual transition*/
+    transition: all 0.3s ease 0.1s;
+    font-size: medium;
+    width: 830px;
+    height: 190px;
+    background-color: aquamarine;
+    z-index: 2;
+    border-radius: 25%;
+    margin: 20px;
+    padding: 20px
+}
+/* This is how big the bio tag will get when you hover over it*/
+.bio:hover{
+    transform: scale(1.1);
+    font-size: large;
+}
+.bio #bio_para{
+    margin: 0;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aquamarine;
+}
+/* This is the manipulation of project list on the Personal project page*/
+.projects #project_list{
+    color: aquamarine;
+}
+
+.contact_info{
+    color: aquamarine;
+    float: right;
+    font-size: small;
+}
+
+
+/* Sources */
+/* */
+/* W3Schools was in help with how to make lists be shown in matrix/grid format
+/* W3Schools was in help with how to make a decorative line that divides Profile picture and profile content*/
+/* ChatGPT helped me with figuring out how to make a container expand in size when you hover over it, COOL!*/
+/* ChatGPT helped me with figuring out how to change the shape/size of a background for a div tag*/
+/* ChatGPT helped me with figuring out how to change the standard list bullets into 8 pointed stars*/

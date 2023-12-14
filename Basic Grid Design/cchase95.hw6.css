@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.flex_container{
+    display: flex;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+}
+.grid_container{
+    display: grid;
+    grid-template-columns: repeat(3, 100px); 
+    grid-template-rows: repeat(3, 100px);
+    gap: 1em; 
+    max-width: 600px; 
+}
+
+.grid_item1{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 24px;
+    grid-column: span 3;
+    grid-row: span 1;
+}
+.grid_item2{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: turquoise; 
+    color: #fff;
+    font-size: 24px;
+    height: 100px;
+    width: 100px;
+}
+.grid_item3{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red; 
+    color: #fff;
+    font-size: 24px;
+    height: 100px;
+    width: 100px;
+}
+.grid_item4{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: purple; 
+    color: #fff;
+    font-size: 24px;
+    height: 100px;
+    width: 100px;
+}
+.grid_item5{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green; 
+    color: #fff;
+    font-size: 24px;
+    height: 100px;
+    width: 100px;
+}
+.grid_item6{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue; 
+    color: #fff;
+    font-size: 24px;
+    height: 100px;
+    width: 100px;
+}
+.grid_item7{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow; 
+    color: #fff;
+    font-size: 24px;
+    height: 100px;
+    width: 100px;
+}
+.grid_item8{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange; 
+    color: #fff;
+    font-size: 24px;
+    height: 100px;
+    width: 100px;
+}
+.grid_item9{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink; 
+    color: #fff;
+    font-size: 24px;
+    height: 100px;
+    width: 100px;
+}
+/*Sources*/
+/**/
+/*Lecture Slides and Code Examples from class was the biggest help with this assignment*/
+/* W3Schools was in help with how to use grids and flex formatting*/
+
+/*Notes*/
+/*There was a request to make one of the cells spill over all of one row. I have chosen cell item 1 to do this. If you were to remove lines 41 and 42, then the requested 3x3 square will be produced.
+I'm hoping that was what you guys wanted. */

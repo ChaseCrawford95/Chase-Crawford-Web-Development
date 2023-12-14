@@ -1,0 +1,337 @@
+body{
+    background-color: #141414;
+    font-family: Helvetica Neue;
+    font-size: large;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+} 
+
+::-webkit-scrollbar-thumb{
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 100px); 
+    grid-template-rows: repeat(3, 100px);
+    gap: 15em; 
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.grid div:nth-child(even){
+    border: 3px;
+    border-style: inset;    
+}
+
+#item1{
+    border-radius: 10px;
+    background-color: #3498db;
+    background-image: url("https://images.unsplash.com/photo-1563694983011-6f4d90358083?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80");
+    background-size: cover;
+    background-position: center;
+    border: 3px solid silver;
+    color: aliceblue;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    transition: all 0.3s ease 0.1s;
+}
+
+#item1:hover{
+    transform: scale(1.1);
+}
+
+#item1:hover::before{
+    content: "Mercedes";
+    position: absolute;
+    top: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, .4)); 
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    font-size: .9em;
+    width: 100%;
+    height:300px;
+}
+
+#item1:hover::after{
+    content: '\f002'; 
+    font-family: "Font Awesome 6 free"; 
+	font-weight: 900; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px; 
+    color: whitesmoke; 
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, .4));
+    border-radius: 50%; 
+    padding: 8px; 
+
+}
+
+#item2{
+    border-radius: 10px;
+    background-color: red;
+    background-image: url("https://images.unsplash.com/photo-1604262990386-148abc676867?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Q2FyJTIwTG9nb3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60");
+    background-size: cover;
+    background-position: center;
+    border-color: darkred;
+    color: aliceblue;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    transition: all 0.3s ease 0.1s;
+}
+
+#item2:hover{
+    transform: scale(1.1);
+}
+
+#item2:hover::before{
+    content: "Porsche";
+    position: absolute;
+    top: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(156, 0, 0, 0.4));
+    transition: opacity 0.3s ease; 
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    font-size: .9em;
+    width: 100%;
+    height:300px;
+}
+
+#item2:hover::after{
+    content: '\f002'; 
+    font-family: "Font Awesome 6 free"; 
+	font-weight: 900; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px; 
+    color: whitesmoke; 
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, .4));
+    border-radius: 50%; 
+    padding: 8px; 
+
+}
+
+#item3{
+    border-radius: 10px;
+    background-color: green;
+    background-image: url("https://images.unsplash.com/photo-1609775494035-9a86b9be4a4f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Q2FyJTIwTG9nb3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60");
+    background-size: cover;
+    background-position: center;
+    border: 3px solid darkblue;
+    color: aliceblue;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    transition: all 0.3s ease 0.1s;
+}
+
+#item3:hover{
+    transform: scale(1.1);
+}
+
+#item3:hover::before{
+    content: "Lamborghini";
+    position: absolute;
+    top: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 139, 0.4)); 
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    font-size: .9em;
+    width: 100%;
+    height:300px;
+}
+
+#item3:hover::after{
+    content: '\f002'; 
+    font-family: "Font Awesome 6 free"; 
+	font-weight: 900; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px; 
+    color: whitesmoke; 
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, .4));
+    border-radius: 50%; 
+    padding: 8px; 
+
+}
+
+#item4{
+    border-radius: 10px;
+    background-color: green;
+    background-image: url("https://images.unsplash.com/photo-1626327404115-4c9505c560e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+    background-size: cover;
+    background-position: center;
+    border-color:darkgoldenrod;
+    color: aliceblue;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    transition: all 0.3s ease 0.1s;
+}
+
+#item4:hover{
+    transform: scale(1.1);
+}
+
+#item4:hover::before{
+    content: "Ford";
+    position: absolute;
+    top: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 215, 0, 0.4)); 
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    font-size: .9em;
+    width: 100%;
+    height:300px;
+}
+
+#item4:hover::after{
+    content: '\f002'; 
+    font-family: "Font Awesome 6 free"; 
+	font-weight: 900; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px; 
+    color: whitesmoke; 
+    background: linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, .4));
+    border-radius: 50%; 
+    padding: 8px; 
+}
+
+#item5{
+    border-radius: 10px;
+    background-color: green;
+    background-image: url("https://images.unsplash.com/photo-1686691699629-e1b376f88d48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80");
+    background-size: cover;
+    background-position: center;
+    border: 3px solid orangered;
+    color: aliceblue;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    transition: all 0.3s ease 0.1s;
+}
+
+#item5:hover{
+    transform: scale(1.1);
+}
+
+#item5:hover::before{
+    content: "Chevrolet";
+    position: absolute;
+    top: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 140, 0, 0.4));  
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    font-size: .9em;
+    width: 100%;
+    height:300px;
+}
+
+#item5:hover::after{
+    content: '\f002'; 
+    font-family: "Font Awesome 6 free"; 
+	font-weight: 900; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px; 
+    color: whitesmoke; 
+    background: linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, .4));
+    border-radius: 50%; 
+    padding: 8px; 
+}
+
+#item6{
+    border-radius: 10px;
+    background-color: green;
+    background-image: url("https://images.unsplash.com/photo-1614741629285-74cb485b080e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZG9kZ2UlMjBjaGFsbGVuZ2VyJTIwc3J0JTIwbG9nb3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60");
+    background-size: cover;
+    background-position: center;
+    border-color:yellow;
+    color: aliceblue;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    transition: all 0.3s ease 0.1s;
+}
+
+#item6:hover{
+    transform: scale(1.1);
+}
+
+#item6:hover::before{
+    content: "Dodge";
+    position: absolute;
+    top: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 0, 0.4));  
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    font-size: .9em;
+    width: 100%;
+    height:300px;
+}
+
+#item6:hover::after{
+    content: '\f002'; 
+    font-family: "Font Awesome 6 free"; 
+	font-weight: 900; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px; 
+    color: whitesmoke; 
+    background: linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, .4));
+    border-radius: 50%; 
+    padding: 8px; 
+}
+/*Sources*/
+/**/
+/* I had to figure out how to use Awesome Font so I found out how to link/upload the library. And how to also how to target a specific icon in the library to use. I got the help from this website: https://www.angularjswiki.com/fontawesome/csscontentcode/*/
+/* Chatgpt helped me in figuring out how to center the magnifier icons. This was using the transform attribute combined with the translate attribute. Example:  top: 50%; left: 50%; transform: translate(-50%, -50%); */
+/* I wanted to figure out how to make custom scroll bars so I found out how to change it from this website(standard scroll bars are BAAAASIC... eww): https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp*/
+/* All images were sourced from this website: https://unsplash.com*/
+/* Lecture slides and code examples helped with gradients and the transform attributes*/

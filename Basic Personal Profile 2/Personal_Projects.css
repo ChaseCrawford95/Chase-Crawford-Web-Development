@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    background-color: #d8d8d8;
+}
+h1{
+    text-decoration: overline;
+    text-decoration-color: #04AA6D ;
+}
+#SideNav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+    background-color: #f1f1f1;
+}
+
+li a{
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active{
+    background-color: #04AA6D;
+    color: white;
+}
+
+li a:hover:not(.active){
+    background-color: #04AA6D;
+    color: white;
+}
+/* Sources */
+/* Creation of the Menu Navigation Bar was in help from this website: https://www.w3schools.com/css/css_navbar.asp *
+/* W3Schools was in help with how to figure out positioning of sectors */
+/* W3Schools was in help with how to make lists be shown in matrix/grid format
+/* W3Schools was in help with how to make a decorative line that divides Profile picture and profile content*/
