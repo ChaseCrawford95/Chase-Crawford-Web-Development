@@ -1,0 +1,1 @@
+This program is a basic profile creation and sign in feature. Profiles will be saved to a SQLite database. 

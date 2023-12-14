@@ -1,0 +1,1 @@
+This program is a simple password checker for when a user creates a profile. 
