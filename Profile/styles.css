@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.animated-div {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+}
+
+@keyframes rise {
+    0% {
+        margin-top: 0;
+    }
+    50% {
+        margin-top: -20px; /* Rise by 20 pixels */
+    }
+    100% {
+        margin-top: -20px;
+    }
+}
+
+@keyframes expand {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2); /* Expand in size */
+    }
+}
+
+.animated-div:hover {
+    animation: rise 0.5s ease forwards, expand 0.5s ease 0.5s forwards;
+}
+
