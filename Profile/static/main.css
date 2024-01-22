@@ -1,20 +1,79 @@
 body{
-    background-color: whitesmoke;
+    background-color: #141618;
     margin: 0px;
     overflow-x: hidden;
     font-family: Mercury Display A,Mercury Display B,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
 }
+::-webkit-scrollbar {
+    width: 12px; 
+  }
+  
+::-webkit-scrollbar-thumb {
+    background-color: #141618; 
+    border-radius: 6px; 
+}
+  
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+#NavigationBar{
+    position: relative;
+    background-color: #141618;
+    bottom: 1px;
+    width: 100%;
+    height: 100px;
+}
 
  #NavigationBar a{
     text-decoration: none;
-    color: inherit;
-    
+    color: white;
+    z-index: 4;
+    margin: 10px;
+
 }
+#Name{
+    position: absolute;
+    left: 10px;
+}
+#NavItems{
+    position: absolute;
+    left: 900px;
+    bottom: 45px;
+}
+#AboutMeAnchor{
+    opacity: 0.5;
+}
+#AboutMeAnchor:hover{
+    opacity: 1;
+}
+#PortfolioAnchor{
+    opacity: 0.5;
+}
+#PortfolioAnchor:hover{
+    opacity: 1;
+    color: blue;
+}
+#ResumeAnchor{
+    opacity: 0.5;
+}
+#ResumeAnchor:hover{
+    opacity: 1;
+    color: #ffa500;
+}
+#ContactAnchor{
+    opacity: 0.5;
+}
+#ContactAnchor:hover{
+    opacity: 1;
+    color: red;
+}
+
 #WorkAreas{
     position: relative;
     width: 100%;
-    height: 400px;
-    background-color: #141618;
+    height: 460px;
+    background-color: #141618; 
     z-index: 1;
 }
 #WorkAreash2{
@@ -23,7 +82,7 @@ body{
     text-align: center;
     z-index: 2;
     left: 33px;
-    top: 60px;
+    top: 35px;
 }
 
 #MyAreas{
@@ -52,7 +111,7 @@ body{
     height: 250px;
     width: 250px;
     border-radius: 250px;
-    background-color: blue;
+    background-color: #0000ff;
     left: 100px;
     bottom: 175px;
 
@@ -63,7 +122,7 @@ body{
 #Text1{
     position: absolute;
     left: 150px;
-    bottom: 140px;
+    bottom: 190px;
     color: white;
 }
 @keyframes Rise1 {
@@ -105,7 +164,7 @@ body{
         transform: scale(1);
     } 
     to{
-        transform: scale(9,1.6);       
+        transform: scale(9,2.18);       
         border-radius: 0;
     }
 }
@@ -157,7 +216,7 @@ body{
     height: 250px;
     width: 250px;
     border-radius: 250px;
-    background-color: orange;
+    background-color: #ffa500;
     left: 530px;
     bottom: 675.1px;
 
@@ -168,7 +227,7 @@ body{
 #Text2 {
     position: absolute;
     left: 590px;
-    bottom: 150px;
+    bottom: 200px;
     color: white;
 }
 @keyframes Rise2 {
@@ -199,7 +258,7 @@ body{
         transform: scale(1);
     } 
     to{
-        transform: scale(9,1.6);       
+        transform: scale(9,2.18);       
         border-radius: 0;
     }
 }
@@ -253,7 +312,7 @@ body{
     height: 250px;
     width: 250px;
     border-radius: 50%;
-    background-color: red;
+    background-color: #ff0000;
     bottom: 1175.1px;
     left: 930px;
 
@@ -264,8 +323,8 @@ body{
 }
 #Text3 {
     position: absolute;
-    left: 1015px;
-    bottom: 150px;
+    left: 1010px;
+    bottom: 160px;
     color: white;
 }
 @keyframes Rise3 {
@@ -284,10 +343,10 @@ body{
         transform: translateY(0);
     }
     50%{
-        transform: translateY(45px);
+        transform: translateY(18px);
     }
     100%{
-        transform: translateY(45px);
+        transform: translateY(18px);
     }
 }
 @keyframes Text3Rise {
@@ -317,7 +376,7 @@ body{
         transform: scale(1);
     } 
     to{
-        transform: scale(9,1.6);       
+        transform: scale(9,2.18);       
         border-radius: 0;
     }
 }
@@ -330,14 +389,15 @@ body{
         transform: scale(1);
     }
 }
-#PPImg{
-    height: 180px;
-    width: 180px;
-    float: left; 
-    margin: 5px;
-    border-radius: 50%;
-    margin-right: 30px;
-    margin-bottom: 20px;
+#CitySkyline{
+    position: relative;
+}
+#CitySkyline img{
+    position: relative;
+    width: 100%;
+    height: 650px;
+    z-index: 1;
+    filter: brightness(80%);
 }
 #AboutMe{
     position: relative;
@@ -355,56 +415,108 @@ body{
     z-index: 3;
 
 }
-#AboutMeContainer{
-    position: relative;
-    background-color: #141618;
-    height: 500px;
-    width: 685px;
-    left: -30px;
-    bottom: 430px;
-    opacity: 0.25;
-    z-index: 2;
+#ProfilePicture img{
+    height: 180px;
+    width: 180px;
+    float: left; 
+    border-radius: 50%;
+    margin-right: 25px;
+    margin-bottom: 20px;
 }
-
-#VerticalLine{
-    position: relative;
-    background-color: white;
-    width: 1px;
-    height: 500px;
-    z-index: 3;
-    left: 70px;
-    bottom: 1480px;
-    opacity: 0.5;
-    transition: opacity 0.3s ease;
-}
-#AboutMe:hover + #VerticalLine{
-    opacity: 1;
-}
-
 #AboutMePara p{
     position: relative;
-    text-align: justify; 
+    text-align: justify;
     font-size: 15px;
     margin-right: 500px;
     color: rgba(255, 255, 255, 1);
     filter: brightness(200%);
 }
-#CitySkyline img{
-    position: relative;
-    width: 100%;
-    height: 650px;
-    z-index: 1;
-    filter: brightness(80%);
+#AboutMeContainer{
+    position: absolute;
+    background-color: #141618;
+    height: 500px;
+    width: 685px;
+    left: -30px;
+    top: -50px;
+    opacity: 0.25;
+    z-index: 2;
 }
+
+#VerticalLine{
+    position: absolute;
+    background-color: white;
+    width: 2px;
+    height: 500px;
+    z-index: 3;
+    right: 1129px;
+    top: -50px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+#AboutMeContainer:hover + #VerticalLine{
+    opacity: 1;
+}
+
+#image1 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 460px;
+    z-index: 2;
+    filter: invert(1);
+    transition: ease 0.3s;
+    opacity: 0.5;
+}
+#image1:hover {
+    opacity: 1;
+    filter: invert(9%) sepia(98%) saturate(7215%) hue-rotate(247deg) brightness(91%) contrast(146%);
+
+}
+#image2 {
+    position: absolute;
+    left: 510px;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+    filter: invert(1);
+    transition: ease 0.3s;
+    opacity: 0.5;
+}
+#image2:hover {
+    opacity: 1;
+    filter: invert(78%) sepia(30%) saturate(7469%) hue-rotate(1deg) brightness(104%) contrast(104%);
+    
+}
+#image3 {
+    position: absolute;
+    left: 560px;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+    filter: invert(1);
+    transition: ease 0.3s;
+    opacity: 0.5;
+    
+}
+#image3:hover {
+    filter: invert(22%) sepia(88%) saturate(5505%) hue-rotate(354deg) brightness(91%) contrast(123%);
+    opacity: 1;
+}
+
 #ToolBelt{
     position: relative;
-    bottom: 900px;
+
+}
+#MyToolBelth2{
+    color: white;
+    position: absolute;
+    z-index: 2;
+    left: 600px;
+    bottom: 400px;
 }
 #ContactMe{
     position: relative;
-    bottom: 900px;
 }
 footer{
     position: relative;
-    bottom: 900px;
 }

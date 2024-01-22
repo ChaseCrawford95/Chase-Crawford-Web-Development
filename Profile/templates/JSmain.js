@@ -7,6 +7,7 @@ const Text2 = document.getElementById("Text2");
 const MobileDevelopment = document.getElementById("MobileDevelopment");
 const RedBall = document.getElementById("RedBall");
 const Text3 = document.getElementById("Text3");
+const Name = document.getElementById("Name");
 GeneralSWE.style.zIndex = "4";
 WebDevelopment.style.zIndex = "4";
 MobileDevelopment.style.zIndex = "4";
@@ -32,9 +33,6 @@ GeneralSWE.addEventListener("mouseout", ()=>{
     Text1.style.animation = 'Text1Rise 1s forwards';
 
 })
-
-
-
 
 WebDevelopment.addEventListener("mouseover",()=>{
     Text2.style.animation = "Text2Drop 1s ease forwards";
@@ -67,3 +65,29 @@ MobileDevelopment.addEventListener('mouseout', () => {
     RedBall.style.animation = 'RedBallShrink 1s forwards';
     Text3.style.animation = "Text3Rise 1s ease forwards";
 });
+
+const VerticalLine = document.getElementById('VerticalLine');
+const image1 = document.getElementById('image1');
+const image2 = document.getElementById('image2');
+const image3 = document.getElementById('image3');
+image1.addEventListener('mouseover', () => {
+    VerticalLine.style.backgroundColor = 'blue';
+    VerticalLine.style.opacity = '1';
+})
+image1.addEventListener('mouseout', () => {
+    VerticalLine.style = 'none 0.3s ease';
+})
+image2.addEventListener('mouseover', () => {
+    VerticalLine.style.backgroundColor = 'orange';
+    VerticalLine.style.opacity = '1';
+})
+image2.addEventListener('mouseout', () => {
+    VerticalLine.style = 'none 0.3s ease';
+})
+image3.addEventListener('mouseover', () => {
+    VerticalLine.style.backgroundColor = 'red';
+    VerticalLine.style.opacity = '1';
+})
+image3.addEventListener('mouseout', () => {
+    VerticalLine.style = 'none 0.3s ease';
+})
