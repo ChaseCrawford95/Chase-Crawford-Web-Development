@@ -505,14 +505,121 @@ body{
 
 #ToolBelt{
     position: relative;
-
+    width: 100%;
+    height: 850px;
+    bottom: 464px;
+    background-color: green;
 }
 #MyToolBelth2{
     color: white;
     position: absolute;
     z-index: 2;
-    left: 600px;
+    position: absolute;
+    left: 590px;
+    top: 20px;
+
+}
+#BackEndTools{
+    position: absolute;
+    background-color: white;
+    height: 760px;
+    width: 500px;
+    left: 50px;
+    top: 90px;
+}
+#BackEndToolsh3{
+    position: absolute;
+    color: black;
+    left: 170px;
+}
+#PythonBox{
+    position: absolute;
+    background-color: black;
+    left: 50px;
+    bottom: 600px;
+    width: 395px;
+    height: 70px;
+}
+#JavaBox{
+    position: absolute;
+    background-color: green;
+    left: 50px;
+    bottom: 500px;
+    width: 395px;
+    height: 70px;
+}
+#CBox{
+    position: absolute;
+    background-color: red;
+    left: 50px;
     bottom: 400px;
+    width: 395px;
+    height: 70px;
+}
+#AssemblyBox{
+    position: absolute;
+    background-color: blue;
+    left: 50px;
+    bottom: 300px;
+    width: 395px;
+    height: 70px;
+}
+#KotlinBox{
+    position: absolute;
+    background-color: purple;
+    left: 50px;
+    bottom: 200px;
+    width: 395px;
+    height: 70px;
+}
+#SwiftBox{
+    position: absolute;
+    background-color: yellow;
+    left: 50px;
+    bottom: 100px;
+    width: 395px;
+    height: 70px;
+}
+#JavaScriptBox{
+    position: absolute;
+    background-color: aqua;
+    left: 50px;
+    bottom: 0px;
+    width: 395px;
+    height: 70px;
+}
+#FrontEndTools{
+    position: absolute;
+    background-color: blue;
+    height: 760px;
+    width: 500px;
+    left: 750px;
+    top: 90px;
+}
+#FrontEndToolsh3{
+    position: absolute;
+    color: black;
+    left: 170px;
+}
+#HTMLBox{
+    position: absolute;
+    background-color: black;
+    left: 50px;
+    bottom: 600px;
+    width: 395px;
+    height: 70px;  
+}
+#CSSBox{
+    position: absolute;
+    background-color: green;
+    left: 50px;
+    bottom: 500px;
+    width: 395px;
+    height: 70px;
+}
+#icon{
+    width: 100px;
+    height: 100px;
 }
 #ContactMe{
     position: relative;
