@@ -531,21 +531,49 @@ body{
     color: white;
     left: 170px;
 }
-#PythonBox{
+#PythonBox {
     position: absolute;
     background-color: white;
     left: 50px;
     bottom: 600px;
     width: 395px;
     height: 70px;
-}
-#PythonIcon{
+    transition: width 0.3s ease;
+   
+  }
+
+  #PythonColoredBox {
+    position: absolute;
+    background: linear-gradient(90deg, #306998 20%, #4B8BBE 40%, #FFD43B 60%, #FFE873 80%, white 100%);
+    left: 50px;
+    bottom: 600px;
+    height: 70px;
+    width: 0px; 
+    transition: width 0.3s ease;
+  
+  }
+
+  #PythonIcon {
     position: absolute;
     width: 60px;
     height: 60px;
     left: 325px;
     top: 5px;
-}
+    z-index: 3;
+  }
+  #PythonTopLayer{
+    position: absolute;
+    background-color: blue;
+    left: 50px;
+    bottom: 600px;
+    width: 395px;
+    height: 70px;
+    z-index: 4;
+    opacity: 0;
+    transition: width 0.3s ease;
+  }
+
+
 #JavaBox{
     position: absolute;
     background-color: white;
@@ -553,6 +581,16 @@ body{
     bottom: 500px;
     width: 395px;
     height: 70px;
+    transition: width 0.3s ease;
+}
+#JavaColoredBox{
+    position: absolute;
+    background: linear-gradient(90deg, #007396 25%,#ED8B00 60%,white 100%  );
+    left: 50px;
+    bottom: 500px;
+    width: 0px;
+    height: 70px;
+    transition: width 0.3s ease;
 }
 #JavaIcon{
     position: absolute;
@@ -560,6 +598,18 @@ body{
     height: 60px;
     left: 325px;
     top: 5px;
+    z-index: 3;
+}
+#JavaTopLayer{
+    position: absolute;
+    background-color: blue;
+    left: 50px;
+    bottom: 500px;
+    width: 395px;
+    height: 70px;
+    z-index: 4;
+    opacity: 0;
+    transition: width 0.3s ease;
 }
 #CBox{
     position: absolute;
@@ -569,12 +619,32 @@ body{
     width: 395px;
     height: 70px;
 }
+#CColoredBox{
+    position: absolute;
+    background: linear-gradient(90deg, #004482 25%, #00599C 50%, #659AD2 75%, white 100%  );
+    left: 50px;
+    bottom: 400px;
+    width: 0px;
+    height: 70px;
+    transition: width 0.3s ease;
+}
 #CIcon{
     position: absolute;
     width: 60px;
     height: 60px;
     left: 325px;
     top: 5px;
+    z-index: 3;
+}
+#CTopLayer{
+    position: absolute;
+    left: 50px;
+    bottom: 400px;
+    width: 395px;
+    height: 70px;
+    z-index: 4;
+    opacity: 0;
+    transition: width 0.3s ease;
 }
 #AssemblyBox{
     position: absolute;
@@ -584,12 +654,32 @@ body{
     width: 395px;
     height: 70px;
 }
+#AssemblyColoredBox{
+    position: absolute;
+    background: linear-gradient(90deg, #B974E9 25%, #F1505E 50%, #18BBE5 75%, white 100%);
+    left: 50px;
+    bottom: 300px;
+    width: 0px;
+    height: 70px;
+    transition: width 0.3s ease;
+}
 #AssemblyIcon{
     position: absolute;
     width: 60px;
     height: 60px;
     left: 325px;
     top: 5px;
+    z-index: 3;
+}
+#AssemblyTopLayer{
+    position: absolute;
+    background-color: green;
+    left: 50px;
+    bottom: 300px;
+    width: 395px;
+    height: 70px;
+    opacity: 0;
+    z-index: 4;
 }
 #KotlinBox{
     position: absolute;
@@ -599,12 +689,32 @@ body{
     width: 395px;
     height: 70px;
 }
+#KotlinColoredBox{
+    position: absolute;
+    background: linear-gradient(90deg, #854DFD 25%, #BF18E4 50%, #DD3A7A 75%, white 100%);
+    left: 50px;
+    bottom: 200px;
+    width: 0px;
+    height: 70px;
+    transition: width 0.3s ease;
+}
 #KotlinIcon{
     position: absolute;
     width: 60px;
     height: 60px;
     left: 325px;
     top: 5px;
+    z-index: 3;
+}
+#KotlinTopLayer{
+    position: absolute;
+    background-color: green;
+    left: 50px;
+    bottom: 200px;
+    width: 395px;
+    height: 70px;
+    opacity: 0;
+    z-index: 4;
 }
 #SwiftBox{
     position: absolute;
@@ -614,12 +724,33 @@ body{
     width: 395px;
     height: 70px;
 }
+#SwiftColoredBox{
+    position: absolute;
+    position: absolute;
+    background: linear-gradient(90deg,#FF5034 25%,#FF5034 50%, #FF5034 75%, white 100%);
+    left: 50px;
+    bottom: 100px;
+    width: 0px;
+    height: 70px;
+    transition: width 0.3s ease;
+}
 #SwiftIcon{
     position: absolute;
     width: 60px;
     height: 60px;
     left: 325px;
     top: 5px;
+    z-index: 3;
+}
+#SwiftTopLayer{
+    position: absolute;
+    background-color: green;
+    left: 50px;
+    bottom: 100px;
+    width: 395px;
+    height: 70px;
+    opacity: 0;
+    z-index: 4;
 }
 #JavaScriptBox{
     position: absolute;
@@ -629,12 +760,32 @@ body{
     width: 395px;
     height: 70px;
 }
+#JavaScriptColoredBox{
+    position: absolute;
+    background: linear-gradient(90deg, black 25%, #FFDF00 50%, #FFDF00 75%, white 100%);
+    left: 50px;
+    bottom: 0px;
+    width: 0px;
+    height: 70px;
+    transition: width 0.3s ease;
+}
 #JavaScriptIcon{
     position: absolute;
     width: 60px;
     height: 60px;
     left: 325px;
     top: 5px;
+    z-index: 3;
+}
+#JavaScriptTopLayer{
+    position: absolute;
+    background-color: green;
+    left: 50px;
+    bottom: 0px;
+    width: 395px;
+    height: 70px;
+    opacity: 0;
+    z-index: 4;
 }
 #SQLiteBox{
     position: absolute;
@@ -644,12 +795,32 @@ body{
     width: 395px;
     height: 70px;
 }
+#SQLiteColoredBox{
+    position: absolute;
+    background: linear-gradient(90deg,#003B57 20%, #0F80CC 40%, #49A6DE 60%, #8ED3F3 80%, white 100%);
+    left: 50px;
+    bottom: -100px;
+    width: 0px;
+    height: 70px;
+    transition: width 0.3s ease;
+}
 #SQLiteIcon{
     position: absolute;
     width: 60px;
     height: 60px;
     left: 325px;
     top: 5px;
+    z-index: 3;
+}
+#SQLiteTopLayer{
+    position: absolute;
+    background-color: green;
+    left: 50px;
+    bottom: -100px;
+    width: 395px;
+    height: 70px;
+    opacity: 0;
+    z-index: 4;
 }
 /* -------------------------------------------------- */
 #FrontEndTools{
@@ -672,12 +843,32 @@ body{
     width: 395px;
     height: 70px;  
 }
+#HTMLColoredBox{
+    position: absolute;
+    background: linear-gradient(90deg, #FF4B00 50%, #FF7816 75%, white 100%);
+    left: 50px;
+    bottom: 600px;
+    width: 0px;
+    height: 70px;  
+    transition: width 0.3s ease;
+}
 #HTMLIcon{
     position: absolute;
     width: 60px;
     height: 60px;
     left: 325px;
     top: 5px;
+    z-index: 3;
+}
+#HTMLTopLayer{
+    position: absolute;
+    background-color: green;
+    left: 50px;
+    bottom: 600px;
+    width: 395px;
+    height: 70px;
+    opacity: 0;
+    z-index: 4;  
 }
 #CSSBox{
     position: absolute;
@@ -687,12 +878,32 @@ body{
     width: 395px;
     height: 70px;
 }
+#CSSColoredBox{
+    position: absolute;
+    background: linear-gradient(90deg, #004CE8 50%, #0065F4 75%, white 100%);
+    left: 50px;
+    bottom: 500px;
+    width: 0px;
+    height: 70px;
+    transition: width 0.3s ease;
+}
 #CSSIcon{
     position: absolute;
     width: 73px;
     height: 73px;
     left: 320px;
     bottom: 5px;
+    z-index: 3;
+}
+#CSSTopLayer{
+    position: absolute;
+    background-color: green;
+    left: 50px;
+    bottom: 500px;
+    width: 395px;
+    height: 70px;
+    opacity: 0;
+    z-index: 4;
 }
 #XMLBox{
     position: absolute;
@@ -702,12 +913,32 @@ body{
     width: 395px;
     height: 70px;
 }
+#XMLColoredBox{
+    position: absolute;
+    background: linear-gradient(90deg, #F29C1F 50%, #F29C1F 70%, white 100%);
+    left: 50px;
+    bottom: 400px;
+    width: 0px;
+    height: 70px;
+    transition: width 0.3s ease;
+}
 #XMLIcon{
     position: absolute;
     width: 60px;
     height: 60px;
     left: 325px;
     top: 5px;
+    z-index: 3;
+}
+#XMLTopLayer{
+    position: absolute;
+    background-color: green;
+    left: 50px;
+    bottom: 400px;
+    width: 395px;
+    height: 70px;
+    opacity: 0;
+    z-index: 4;
 }
 #FXMLBox{
     position: absolute;
@@ -717,16 +948,45 @@ body{
     width: 395px;
     height: 70px;
 }
+#FXMLColoredBox{
+    position: absolute;
+    background: linear-gradient(90deg, #EE3A23 15%, #EF4923 30%,#F15822 45%, #F36E21 60%, #F68A1F 75%, #FCB215 90%, white 100% );
+    left: 50px;
+    bottom: 300px;
+    width: 0px;
+    height: 70px;
+    transition: width 0.3s ease;
+}
 #FXMLIcon{
     position: absolute;
     width: 60px;
     height: 60px;
     left: 325px;
     top: 5px;
+    z-index: 3;
+}
+#FXMLTopLayer{
+    position: absolute;
+    background-color: white;
+    left: 50px;
+    bottom: 300px;
+    width: 395px;
+    height: 70px;
+    opacity: 0;
+    z-index: 4;
 }
 #ContactMe{
     position: relative;
 }
+
 footer{
     position: relative;
+}
+#DisclaimerAndSources{
+    position: absolute;
+    font-size: xx-small;
+    color: grey;
+}
+#DisclaimerAndSources p{
+    margin-bottom: 1px;
 }

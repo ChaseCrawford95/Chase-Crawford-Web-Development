@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hover Animation</title>
-    <style>
-        .box {
-            width: 100px;
-            height: 100px;
-            background-color: blue;
-            transition: width 0.3s ease; /* Smooth transition effect */
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
 
-        .box:hover {
-            width: 150px; /* Adjust the width on hover */
-        }
-    </style>
+    .box1, .box2 {
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+      transition: width 0.3s ease; /* Add transition for smooth effect */
+    }
+
+    .box1:hover + .box2 {
+      width: 200px; /* Increase width on hover */
+    }
+  </style>
 </head>
 <body>
-
-<div class="box"></div>
-
+  <div class="container">
+    <div class="box1"></div>
+    <div class="box2"></div>
+  </div>
 </body>
 </html>
 
