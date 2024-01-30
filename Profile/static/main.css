@@ -542,7 +542,7 @@ body{
    
   }
 
-  #PythonColoredBox {
+#PythonColoredBox {
     position: absolute;
     background: linear-gradient(90deg, #306998 20%, #4B8BBE 40%, #FFD43B 60%, #FFE873 80%, white 100%);
     left: 50px;
@@ -550,18 +550,17 @@ body{
     height: 70px;
     width: 0px; 
     transition: width 0.3s ease;
-  
-  }
+}
 
-  #PythonIcon {
+#PythonIcon {
     position: absolute;
     width: 60px;
     height: 70px;
     left: 325px;
     top: 5px;
     z-index: 3;
-  }
-  #PythonTopLayer{
+}
+#PythonTopLayer{
     position: absolute;
     background-color: blue;
     left: 50px;
@@ -571,7 +570,24 @@ body{
     z-index: 4;
     opacity: 0;
     transition: width 0.3s ease;
-  }
+}
+#PythonTextHidder{
+    position: absolute;
+    background-color: #141618;
+    height: 70px;
+    width: 50px;
+    bottom: 600px;
+    z-index: 4;
+}
+#PythonText{
+    position: absolute;
+    color: white;
+    bottom: 610px;
+    z-index: 3;
+    opacity: 0;
+}
+
+
 
 
 #JavaBox{
@@ -611,6 +627,21 @@ body{
     opacity: 0;
     transition: width 0.3s ease;
 }
+#JavaTextHidder{
+    position: absolute;
+    background-color: #141618;
+    height: 70px;
+    width: 50px;
+    bottom: 500px;
+    z-index: 4;
+}
+#JavaText{
+    position: absolute;
+    color: white;
+    bottom: 510px;
+    z-index: 3;
+    opacity: 0;
+}
 #CBox{
     position: absolute;
     background-color: white;
@@ -645,6 +676,21 @@ body{
     z-index: 4;
     opacity: 0;
     transition: width 0.3s ease;
+}
+#CTextHidder{
+    position: absolute;
+    background-color: #141618;
+    height: 70px;
+    width: 50px;
+    bottom: 400px;
+    z-index: 4;
+}
+#CText{
+    position: absolute;
+    color: white;
+    bottom: 410px;
+    z-index: 3;
+    opacity: 0;
 }
 #AssemblyBox{
     position: absolute;
@@ -681,6 +727,21 @@ body{
     opacity: 0;
     z-index: 4;
 }
+#AssemblyTextHidder{
+    position: absolute;
+    background-color: #141618;
+    height: 70px;
+    width: 50px;
+    bottom: 300px;
+    z-index: 4;
+}
+#AssemblyText{
+    position: absolute;
+    color: white;
+    bottom: 310px;
+    z-index: 3;
+    opacity: 0;
+}
 #KotlinBox{
     position: absolute;
     background-color: white;
@@ -715,6 +776,21 @@ body{
     height: 70px;
     opacity: 0;
     z-index: 4;
+}
+#KotlinTextHidder{
+    position: absolute;
+    background-color: #141618;
+    height: 70px;
+    width: 50px;
+    bottom: 200px;
+    z-index: 4;
+}
+#KotlinText{
+    position: absolute;
+    color: white;
+    bottom: 210px;
+    z-index: 3;
+    opacity: 0;
 }
 #SwiftBox{
     position: absolute;
@@ -752,6 +828,21 @@ body{
     opacity: 0;
     z-index: 4;
 }
+#SwiftTextHidder{
+    position: absolute;
+    background-color: #141618;
+    height: 70px;
+    width: 50px;
+    bottom: 100px;
+    z-index: 4;
+}
+#SwiftText{
+    position: absolute;
+    color: white;
+    bottom: 110px;
+    z-index: 3;
+    opacity: 0;
+}
 #JavaScriptBox{
     position: absolute;
     background-color: white;
@@ -787,6 +878,21 @@ body{
     opacity: 0;
     z-index: 4;
 }
+#JavaScriptTextHidder{
+    position: absolute;
+    background-color: #141618;
+    height: 70px;
+    width: 50px;
+    bottom: 0px;
+    z-index: 4;
+}
+#JavaScriptText{
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    z-index: 3;
+    opacity: 0;
+}
 #SQLiteBox{
     position: absolute;
     background-color: white;
@@ -821,6 +927,21 @@ body{
     height: 70px;
     opacity: 0;
     z-index: 4;
+}
+#SQLiteTextHidder{
+    position: absolute;
+    background-color: #141618;
+    height: 70px;
+    width: 50px;
+    bottom: -100px;
+    z-index: 4;
+}
+#SQLiteText{
+    position: absolute;
+    color: white;
+    bottom: -90px;
+    z-index: 3;
+    opacity: 0;
 }
 /* -------------------------------------------------- */
 #FrontEndTools{
@@ -869,6 +990,21 @@ body{
     height: 70px;
     opacity: 0;
     z-index: 4;  
+}
+#HTMLTextHidder{
+    position: absolute;
+    background-color: #141618;
+    height: 70px;
+    width: 50px;
+    bottom: 600px;
+    z-index: 4;
+}
+#HTMLText{
+    position: absolute;
+    color: white;
+    bottom: 610px;
+    z-index: 3;
+    opacity: 0;
 }
 #CSSBox{
     position: absolute;
@@ -974,6 +1110,42 @@ body{
     height: 70px;
     opacity: 0;
     z-index: 4;
+}
+@keyframes TextMoveRight{
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(75px);
+    }
+    100%{
+        transform: translateX(75px);
+    }
+}
+@keyframes TextMoveBack{
+    0%{
+        transform: translateX(75px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+@keyframes TextOpacityChange{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.25;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 #ContactMe{
     position: relative;

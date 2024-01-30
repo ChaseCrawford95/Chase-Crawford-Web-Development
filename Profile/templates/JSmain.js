@@ -94,22 +94,31 @@ image3.addEventListener('mouseout', () => {
 // -----------------------------------------------------------
 const PythonTopLayer = document.getElementById("PythonTopLayer");
 const PythonColoredBox = document.getElementById("PythonColoredBox");
+const PythonText = document.getElementById("PythonText");
 const JavaTopLayer = document.getElementById("JavaTopLayer");
 const JavaColoredBox = document.getElementById("JavaColoredBox");
+const JavaText = document.getElementById("JavaText");
 const CTopLayer = document.getElementById("CTopLayer");
 const CColoredBox = document.getElementById("CColoredBox");
+const CText = document.getElementById("CText");
 const AssemblyTopLayer = document.getElementById("AssemblyTopLayer");
 const AssemblyColoredBox = document.getElementById("AssemblyColoredBox");
+const AssemblyText = document.getElementById("AssemblyText");
 const KotlinTopLayer = document.getElementById("KotlinTopLayer");
 const KotlinColoredBox = document.getElementById("KotlinColoredBox");
+const KotlinText = document.getElementById("KotlinText");
 const SwiftTopLayer = document.getElementById("SwiftTopLayer");
 const SwiftColoredBox = document.getElementById("SwiftColoredBox");
+const SwiftText = document.getElementById("SwiftText");
 const JavaScriptTopLayer = document.getElementById("JavaScriptTopLayer");
 const JavaScriptColoredBox = document.getElementById("JavaScriptColoredBox");
+const JavaScriptText = document.getElementById("JavaScriptText");
 const SQLiteTopLayer = document.getElementById("SQLiteTopLayer");
 const SQLiteColoredBox = document.getElementById("SQLiteColoredBox");
+const SQLiteText = document.getElementById("SQLiteText");
 const HTMLTopLayer = document.getElementById("HTMLTopLayer");
 const HTMLColoredBox = document.getElementById("HTMLColoredBox");
+const HTMLText = document.getElementById("HTMLText");
 const CSSTopLayer = document.getElementById("CSSTopLayer");
 const CSSColoredBox = document.getElementById("CSSColoredBox");
 const XMLTopLayer = document.getElementById("XMLTopLayer");
@@ -118,51 +127,68 @@ const FXMLTopLayer = document.getElementById("FXMLTopLayer");
 const FXMLColoredBox = document.getElementById("FXMLColoredBox");
 PythonTopLayer.addEventListener("mouseover", () => {
     PythonColoredBox.style.width = "395px";
+    PythonText.style.animation = "TextMoveRight 1s ease forwards,TextOpacityChange 0.5s ease forwards"
 })
 PythonTopLayer.addEventListener("mouseout", () =>{
     PythonColoredBox.style.width = "0px";
+    PythonText.style.animation = "TextMoveBack 1s ease forwards"
 })
 JavaTopLayer.addEventListener("mouseover",()=>{
     JavaColoredBox.style.width = "395px";
+    JavaText.style.animation = "TextMoveRight 1s ease forwards,TextOpacityChange 0.5s ease forwards"
 })
 JavaTopLayer.addEventListener("mouseout",()=>{
     JavaColoredBox.style.width = "0px";
+    JavaText.style.animation = "TextMoveBack 1s ease forwards"
 })
 CTopLayer.addEventListener("mouseover",()=>{
     CColoredBox.style.width = "395px";
+    CText.style.animation = "TextMoveRight 1s ease forwards,TextOpacityChange 0.5s ease forwards"
 })
 CTopLayer.addEventListener("mouseout", ()=>{
     CColoredBox.style.width = "0px";
+    CText.style.animation = "TextMoveBack 1s ease forwards"
 })
 AssemblyTopLayer.addEventListener("mouseover", ()=>{
     AssemblyColoredBox.style.width = "395px"
+    AssemblyText.style.animation = "TextMoveRight 1s ease forwards,TextOpacityChange 0.5s ease forwards"
 })
 AssemblyTopLayer.addEventListener("mouseout", ()=>{
     AssemblyColoredBox.style.width="0px";
+    AssemblyText.style.animation = "TextMoveBack 1s ease forwards"
 })
 KotlinTopLayer.addEventListener("mouseover", ()=>{
     KotlinColoredBox.style.width = "395px";
+    KotlinText.style.animation = "TextMoveRight 1s ease forwards,TextOpacityChange 0.5s ease forwards"
 })
 KotlinTopLayer.addEventListener("mouseout",() =>{
     KotlinColoredBox.style.width = "0px";
+    KotlinText.style.animation = "TextMoveBack 1s ease forwards"
 })
 SwiftTopLayer.addEventListener("mouseover", ()=>{
     SwiftColoredBox.style.width = "395px"
+    SwiftText.style.animation = "TextMoveRight 1s ease forwards,TextOpacityChange 0.5s ease forwards"
 })
 SwiftTopLayer.addEventListener("mouseout",()=>{
     SwiftColoredBox.style.width = "0px"
+    SwiftText.style.animation = "TextMoveBack 1s ease forwards"
+
 })
 JavaScriptTopLayer.addEventListener("mouseover", ()=>{
     JavaScriptColoredBox.style.width= "395px"
+    JavaScriptText.style.animation = "TextMoveRight 1s ease forwards,TextOpacityChange 0.5s ease forwards"
 })
 JavaScriptTopLayer.addEventListener("mouseout", ()=>{
     JavaScriptColoredBox.style.width= "0px"
+    JavaScriptText.style.animation = "TextMoveBack 1s ease forwards"
 })
 SQLiteTopLayer.addEventListener("mouseover", () =>{
     SQLiteColoredBox.style.width = "395px";
+    SQLiteText.style.animation = "TextMoveRight 1s ease forwards,TextOpacityChange 0.5s ease forwards"
 })
 SQLiteTopLayer.addEventListener("mouseout", () =>{
     SQLiteColoredBox.style.width = "0px";
+    SQLiteText.style.animation = "TextMoveBack 1s ease forwards"
 })
 HTMLTopLayer.addEventListener("mouseover", ()=>{
     HTMLColoredBox.style.width = "395px";
