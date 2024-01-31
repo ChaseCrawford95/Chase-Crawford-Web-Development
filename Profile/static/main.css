@@ -508,16 +508,15 @@ body{
     width: 100%;
     height: 950px;
     bottom: 464px;
-
 }
 #MyToolBelth2{
     color: white;
     position: absolute;
     z-index: 2;
     position: absolute;
-    left: 590px;
+    left: 560px;
     top: 20px;
-
+    font-size: xx-large;
 }
 #BackEndTools{
     position: absolute;
@@ -586,10 +585,6 @@ body{
     z-index: 3;
     opacity: 0;
 }
-
-
-
-
 #JavaBox{
     position: absolute;
     background-color: white;
@@ -692,7 +687,7 @@ body{
     z-index: 3;
     opacity: 0;
 }
-#AssemblyBox{
+#JavaScriptBox{
     position: absolute;
     background-color: white;
     left: 50px;
@@ -700,16 +695,16 @@ body{
     width: 395px;
     height: 70px;
 }
-#AssemblyColoredBox{
+#JavaScriptColoredBox{
     position: absolute;
-    background: linear-gradient(90deg, #B974E9 25%, #F1505E 50%, #18BBE5 75%, white 100%);
+    background: linear-gradient(90deg, black 25%, #FFDF00 50%, #FFDF00 75%, white 100%);
     left: 50px;
     bottom: 300px;
     width: 0px;
     height: 70px;
     transition: width 0.3s ease;
 }
-#AssemblyIcon{
+#JavaScriptIcon{
     position: absolute;
     width: 60px;
     height: 60px;
@@ -717,7 +712,7 @@ body{
     top: 5px;
     z-index: 3;
 }
-#AssemblyTopLayer{
+#JavaScriptTopLayer{
     position: absolute;
     background-color: green;
     left: 50px;
@@ -727,7 +722,7 @@ body{
     opacity: 0;
     z-index: 4;
 }
-#AssemblyTextHidder{
+#JavaScriptTextHidder{
     position: absolute;
     background-color: #141618;
     height: 70px;
@@ -735,13 +730,14 @@ body{
     bottom: 300px;
     z-index: 4;
 }
-#AssemblyText{
+#JavaScriptText{
     position: absolute;
     color: white;
     bottom: 310px;
     z-index: 3;
     opacity: 0;
 }
+
 #KotlinBox{
     position: absolute;
     background-color: white;
@@ -843,7 +839,7 @@ body{
     z-index: 3;
     opacity: 0;
 }
-#JavaScriptBox{
+#AssemblyBox{
     position: absolute;
     background-color: white;
     left: 50px;
@@ -851,16 +847,16 @@ body{
     width: 395px;
     height: 70px;
 }
-#JavaScriptColoredBox{
+#AssemblyColoredBox{
     position: absolute;
-    background: linear-gradient(90deg, black 25%, #FFDF00 50%, #FFDF00 75%, white 100%);
+    background: linear-gradient(90deg, #B974E9 25%, #F1505E 50%, #18BBE5 75%, white 100%);
     left: 50px;
     bottom: 0px;
     width: 0px;
     height: 70px;
     transition: width 0.3s ease;
 }
-#JavaScriptIcon{
+#AssemblyIcon{
     position: absolute;
     width: 60px;
     height: 60px;
@@ -868,7 +864,7 @@ body{
     top: 5px;
     z-index: 3;
 }
-#JavaScriptTopLayer{
+#AssemblyTopLayer{
     position: absolute;
     background-color: green;
     left: 50px;
@@ -878,7 +874,7 @@ body{
     opacity: 0;
     z-index: 4;
 }
-#JavaScriptTextHidder{
+#AssemblyTextHidder{
     position: absolute;
     background-color: #141618;
     height: 70px;
@@ -886,7 +882,7 @@ body{
     bottom: 0px;
     z-index: 4;
 }
-#JavaScriptText{
+#AssemblyText{
     position: absolute;
     color: white;
     bottom: 10px;
@@ -1041,6 +1037,21 @@ body{
     opacity: 0;
     z-index: 4;
 }
+#CSSTextHidder{
+    position: absolute;
+    background-color: #141618;
+    height: 70px;
+    width: 50px;
+    bottom: 500px;
+    z-index: 4;
+}
+#CSSText{
+    position: absolute;
+    color: white;
+    bottom: 510px;
+    z-index: 3;
+    opacity: 0;
+}
 #XMLBox{
     position: absolute;
     background-color: white;
@@ -1076,6 +1087,21 @@ body{
     opacity: 0;
     z-index: 4;
 }
+#XMLTextHidder{
+    position: absolute;
+    background-color: #141618;
+    height: 70px;
+    width: 50px;
+    bottom: 400px;
+    z-index: 4;
+}
+#XMLText{
+    position: absolute;
+    color: white;
+    bottom: 410px;
+    z-index: 3;
+    opacity: 0;
+}
 #FXMLBox{
     position: absolute;
     background-color: white;
@@ -1110,6 +1136,21 @@ body{
     height: 70px;
     opacity: 0;
     z-index: 4;
+}
+#FXMLTextHidder{
+    position: absolute;
+    background-color: #141618;
+    height: 70px;
+    width: 50px;
+    bottom: 300px;
+    z-index: 4;
+}
+#FXMLText{
+    position: absolute;
+    color: white;
+    bottom: 310px;
+    z-index: 3;
+    opacity: 0;
 }
 @keyframes TextMoveRight{
     0%{
@@ -1149,6 +1190,15 @@ body{
 }
 #ContactMe{
     position: relative;
+    background-color: #0000ff;
+    height: 650px;
+    bottom: 464px;
+}
+#ContactMe h2{
+    position: absolute;
+    color: white;
+    
+
 }
 
 footer{

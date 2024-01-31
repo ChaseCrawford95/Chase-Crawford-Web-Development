@@ -1,3 +1,4 @@
+// "I develop in these areas" section --------------------------------------
 const GeneralSWE = document.getElementById("GeneralSWE");
 const BlueBall = document.getElementById("BlueBall");
 const Text1 = document.getElementById("Text1");
@@ -31,9 +32,7 @@ GeneralSWE.addEventListener("mouseover", ()=>{
 GeneralSWE.addEventListener("mouseout", ()=>{
     BlueBall.style.animation = 'BlueBallShrink 1s forwards';
     Text1.style.animation = 'Text1Rise 1s forwards';
-
 })
-
 WebDevelopment.addEventListener("mouseover",()=>{
     Text2.style.animation = "Text2Drop 1s ease forwards";
     OrangeBall.style.animation = "OrangeBallRise 1s forwards,OrangeBallExpand 1s forwards";
@@ -48,8 +47,6 @@ WebDevelopment.addEventListener("mouseout",()=>{
     OrangeBall.style.animation = 'OrangeBallShrink 1s forwards';
     Text2.style.animation = "Text2Rise 1s ease forwards";
 })
-
-
 MobileDevelopment.addEventListener('mouseover', () => {
     Text3.style.animation = "Text3Drop 1s forwards";
     RedBall.style.animation = 'RedBallRise 1s forwards, RedBallExpand 1s forwards';
@@ -60,12 +57,11 @@ MobileDevelopment.addEventListener('mouseover', () => {
     OrangeBall.style.zIndex = "2";
     RedBall.style.zIndex = "3";
 });
-
 MobileDevelopment.addEventListener('mouseout', () => {
     RedBall.style.animation = 'RedBallShrink 1s forwards';
     Text3.style.animation = "Text3Rise 1s ease forwards";
 });
-// -------------------------------------------------------------------------
+// About me section-------------------------------------------------------------------------
 const VerticalLine = document.getElementById('VerticalLine');
 const image1 = document.getElementById('image1');
 const image2 = document.getElementById('image2');
@@ -91,7 +87,7 @@ image3.addEventListener('mouseover', () => {
 image3.addEventListener('mouseout', () => {
     VerticalLine.style = 'none 0.3s ease';
 })
-// -----------------------------------------------------------
+// Tool belt section-----------------------------------------------------------
 const PythonTopLayer = document.getElementById("PythonTopLayer");
 const PythonColoredBox = document.getElementById("PythonColoredBox");
 const PythonText = document.getElementById("PythonText");
@@ -121,10 +117,13 @@ const HTMLColoredBox = document.getElementById("HTMLColoredBox");
 const HTMLText = document.getElementById("HTMLText");
 const CSSTopLayer = document.getElementById("CSSTopLayer");
 const CSSColoredBox = document.getElementById("CSSColoredBox");
+const CSSText = document.getElementById("CSSText");
 const XMLTopLayer = document.getElementById("XMLTopLayer");
 const XMLColoredBox = document.getElementById("XMLColoredBox");
+const XMLText = document.getElementById("XMLText");
 const FXMLTopLayer = document.getElementById("FXMLTopLayer");
 const FXMLColoredBox = document.getElementById("FXMLColoredBox");
+const FXMLText = document.getElementById("FXMLText");
 PythonTopLayer.addEventListener("mouseover", () => {
     PythonColoredBox.style.width = "395px";
     PythonText.style.animation = "TextMoveRight 1s ease forwards,TextOpacityChange 0.5s ease forwards"
@@ -172,7 +171,6 @@ SwiftTopLayer.addEventListener("mouseover", ()=>{
 SwiftTopLayer.addEventListener("mouseout",()=>{
     SwiftColoredBox.style.width = "0px"
     SwiftText.style.animation = "TextMoveBack 1s ease forwards"
-
 })
 JavaScriptTopLayer.addEventListener("mouseover", ()=>{
     JavaScriptColoredBox.style.width= "395px"
@@ -192,25 +190,33 @@ SQLiteTopLayer.addEventListener("mouseout", () =>{
 })
 HTMLTopLayer.addEventListener("mouseover", ()=>{
     HTMLColoredBox.style.width = "395px";
+    HTMLText.style.animation = "TextMoveRight 1s ease forwards,TextOpacityChange 0.5s ease forwards"
 })
 HTMLTopLayer.addEventListener("mouseout", ()=>{
     HTMLColoredBox.style.width = "0px";
+    HTMLText.style.animation = "TextMoveBack 1s ease forwards"
 })
 CSSTopLayer.addEventListener("mouseover", ()=>{
     CSSColoredBox.style.width = "395px"
+    CSSText.style.animation = "TextMoveRight 1s ease forwards,TextOpacityChange 0.5s ease forwards"
 })
 CSSTopLayer.addEventListener("mouseout", ()=>{
     CSSColoredBox.style.width = "0px"
+    CSSText.style.animation = "TextMoveBack 1s ease forwards"
 })
 XMLTopLayer.addEventListener("mouseover", () =>{
     XMLColoredBox.style.width = "395px"
+    XMLText.style.animation = "TextMoveRight 1s ease forwards,TextOpacityChange 0.5s ease forwards"
 })
 XMLTopLayer.addEventListener("mouseout", () =>{
     XMLColoredBox.style.width = "0px"
+    XMLText.style.animation = "TextMoveBack 1s ease forwards"
 })
 FXMLTopLayer.addEventListener("mouseover", ()=>{
     FXMLColoredBox.style.width = "395px"
+    FXMLText.style.animation = "TextMoveRight 1s ease forwards,TextOpacityChange 0.5s ease forwards"
 })
 FXMLTopLayer.addEventListener("mouseout", ()=>{
     FXMLColoredBox.style.width = "0px"
+    FXMLText.style.animation = "TextMoveBack 1s ease forwards"
 })
